@@ -8,7 +8,7 @@ public class Main {
 
         if (args.length != 4) {
             System.out.println("incorrect parameters amount.\n" +
-                    "you should to give 4 space divided parameters int a int p double m1 double m2");
+                    "you should give 4 space divided parameters int a int p double m1 double m2");
             //return;
             System.exit(-1);
         }
@@ -19,19 +19,19 @@ public class Main {
         double m2 = 0;
         String incorrectPrameterName = "";
         try {
-            incorrectPrameterName = "a";
+            incorrectPrameterName = "\'a\'";
             a = Integer.parseInt(args[0]);
-            incorrectPrameterName = "p";
+            incorrectPrameterName = "\'p\'";
             p = Integer.parseInt(args[1]);
-            incorrectPrameterName = "m1";
+            incorrectPrameterName = "\'m1\'";
             m1 = Double.parseDouble(args[2]);
-            incorrectPrameterName = "m2";
+            incorrectPrameterName = "\'m2\'";
             m2 = Double.parseDouble(args[3]);
 
             try {
                 System.out.println(new GCalculator().calculeteG(a, p, m1, m2));
             } catch (GCalculatorNotAlowedParameterZeroValue exc) {
-                System.out.println(exc.getMessage() + " must not be equal zero");
+                System.out.println(exc.getMessage() + " parameter must not be equal zero");
             }
 
         } catch (NumberFormatException exc) {
