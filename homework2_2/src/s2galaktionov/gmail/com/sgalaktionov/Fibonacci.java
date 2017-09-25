@@ -42,27 +42,32 @@ public class Fibonacci {
         if (n <= 0) {
             throw new CalculatorInvalidParametersValue("n");
         }
-        result=new ArrayList<Integer>();
+        result = new ArrayList<Integer>();
         switch (n) {
+
             case 2:
                 result.add(1);
             case 1:
                 result.add(1);
                 break;
+
             default:
-                this.n=n;
+                this.n = n;
                 result.add(1);
                 result.add(1);
                 switch (loopType) {
                     case 1:
                         fibonacciInWhileCalc();
                         break;
+
                     case 2:
                         fibonacciInDoWhileCalc();
                         break;
+
                     case 3:
                         fibonacciInForCalc();
                         break;
+
                     default:
                         throw new CalculatorInvalidParametersValue("loopType");
                 }

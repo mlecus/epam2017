@@ -1,10 +1,5 @@
 package s2galaktionov.gmail.com.sgalaktionov;
 
-import org.junit.Test;
-import s2galaktionov.gmail.com.sgalaktionov.Exceptions.CalculatorInvalidParametersValue;
-
-import static org.junit.Assert.*;
-
 /**
  * Created by mlecus on 26.09.2017.
  */

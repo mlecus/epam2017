@@ -28,5 +28,4 @@ public class FactorialTest {
     public void testCalcWithNEqual10() throws Exception {
         assertEquals(3628800, new Factorial().calc(1, 10));
     }
-
 }
