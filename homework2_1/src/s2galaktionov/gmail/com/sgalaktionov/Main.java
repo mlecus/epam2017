@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        if (args.length != 4) {
+        if ((args == null) || (args.length != 4)) {
             System.out.println("incorrect parameters amount.\n" +
                     "you should give 4 space divided parameters int a int p double m1 double m2");
             //return;
