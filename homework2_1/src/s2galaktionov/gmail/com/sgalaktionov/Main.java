@@ -12,12 +12,13 @@ public class Main {
             //return;
             System.exit(-1);
         }
-        //if (Integer.parseInt())
+
         int a = 0;
         int p = 0;
         double m1 = 0;
         double m2 = 0;
         String incorrectPrameterName = "";
+
         try {
             incorrectPrameterName = "\'a\'";
             a = Integer.parseInt(args[0]);
