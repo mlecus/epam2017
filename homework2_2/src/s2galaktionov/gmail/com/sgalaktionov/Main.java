@@ -11,7 +11,7 @@ public class Main {
         int algorithmID = 1;
         int loopType = 1;
         int n = 1;
-        if (args.length != 3) {
+        if ((args == null) || (args.length != 3)) {
             System.out.println("incorrect parameters amount.\n" +
                     "you should give 3 space divided parameters int algorithmID int loopType int n");
             System.exit(-1);
