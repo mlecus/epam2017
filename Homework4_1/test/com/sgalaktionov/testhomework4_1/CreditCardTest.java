@@ -13,23 +13,23 @@ public class CreditCardTest {
     final double toMuchDoubleAmount = 25.5D;
 
     @Test
-    public void testDecreaseBalanceWithAmountLessThamBalance() throws Exception {
-        CreditCard creditCard = new CreditCard(CORRECT_NAME,correctDoubleBalance);
+    public void testDecreaseBalanceWithAmountLessThanBalance() throws Exception {
+        CreditCard creditCard = new CreditCard(CORRECT_NAME, correctDoubleBalance);
         creditCard.decreaseBalance(correctDoubleAmount);
-        assertEquals (correctDoubleBalance-correctDoubleAmount,creditCard.getBalance(),PRECISION);
+        assertEquals(correctDoubleBalance - correctDoubleAmount, creditCard.getBalance(), PRECISION);
     }
 
     @Test
     public void testDecreaseBalanceWithAmountEqualsBalance() throws Exception {
-        CreditCard creditCard = new CreditCard(CORRECT_NAME,correctDoubleBalance);
+        CreditCard creditCard = new CreditCard(CORRECT_NAME, correctDoubleBalance);
         creditCard.decreaseBalance(creditCard.getBalance());
-        assertEquals (0,creditCard.getBalance(),PRECISION);
+        assertEquals(0, creditCard.getBalance(), PRECISION);
     }
 
     @Test
     public void testDecreaseBalanceWithAmountMoreThanBalance() throws Exception {
-        CreditCard creditCard = new CreditCard(CORRECT_NAME,correctDoubleBalance);
+        CreditCard creditCard = new CreditCard(CORRECT_NAME, correctDoubleBalance);
         creditCard.decreaseBalance(toMuchDoubleAmount);
-        assertEquals (correctDoubleBalance-toMuchDoubleAmount,creditCard.getBalance(),PRECISION);
+        assertEquals(correctDoubleBalance - toMuchDoubleAmount, creditCard.getBalance(), PRECISION);
     }
 }
