@@ -9,7 +9,6 @@ public class Card implements ICard {
     protected String name;
     protected double balance;
 
-
     public Card(String name, double balance) {
         checkNameForCorrectValue(name);
         checkBalanceForCorrectValue(balance);

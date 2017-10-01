@@ -79,5 +79,4 @@ public class CardConstructorsTest {
         assertEquals(card.getName(), cardCopy.getName());
         assertEquals(card.getBalance(), cardCopy.getBalance(), PRECISION);
     }
-
 }

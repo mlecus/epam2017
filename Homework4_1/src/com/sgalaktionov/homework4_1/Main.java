@@ -1,8 +1,8 @@
-package com.sgalaktionov;
+package com.sgalaktionov.homework4_1;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
     }
 }

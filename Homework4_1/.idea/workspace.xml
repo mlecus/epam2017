@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff39b215-61be-4a97-910b-1c945e01f3b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithCreditCardTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithDeitCardTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/CreditCard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/DebitCard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/Exceptions/IllegalArgumentValue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Exceptions/IllegalArgumentValue.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sgalaktionov/homework3_1/Card.java" afterPath="$PROJECT_DIR$/src/com/sgalaktionov/homework3_1/Card.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java" afterPath="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/DebitCard.java" afterPath="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/DebitCard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Main.java" afterPath="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardConstructorsTest.java" afterPath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardConstructorsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithCreditCardTest.java" afterPath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithCreditCardTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithDeitCardTest.java" afterPath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithDeitCardTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/CreditCardTest.java" afterPath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/CreditCardTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java" afterPath="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +26,8 @@
       <file leaf-file-name="Atm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,39 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AtmWithDeitCardTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreditCard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/CreditCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtmWithDeitCardTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithDeitCardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AtmWithCreditCardTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithCreditCardTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DebitCardTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="-243">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +60,32 @@
       <file leaf-file-name="CreditCardTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/CreditCardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="352">
+              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DebitCardTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-668">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtmWithCreditCardTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithCreditCardTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-192">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,8 +96,8 @@
       <file leaf-file-name="DebitCard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/DebitCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,25 +105,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IllegalArgumentValue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Exceptions/IllegalArgumentValue.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardConstructorsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardConstructorsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
-                <element signature="e#159#160#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework3_1/ICard.java">
+      <file leaf-file-name="CardTestICardImplementatoinMethods.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardTestICardImplementatoinMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="-3133">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,21 +184,22 @@
         <option value="$PROJECT_DIR$/test/com/sgalaktionov/homework3_1/CardConstructorsTest.java" />
         <option value="$PROJECT_DIR$/test/com/sgalaktionov/homework3_1/CardTestICardImplementatoinMethods.java" />
         <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/testhomework4_1/CreditCardTest.java" />
-        <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework3_1/Card.java" />
         <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework3_1/ICard.java" />
         <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/CreditCard.java" />
-        <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/DebitCard.java" />
-        <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardConstructorsTest.java" />
         <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardTestICardImplementatoinMethods.java" />
-        <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/CreditCardTest.java" />
-        <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java" />
-        <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java" />
         <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/AtmUI.java" />
         <option value="$PROJECT_DIR$/test/com/sgalaktionov/homework4_1/AtmTest.java" />
         <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmTest.java" />
         <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Exceptions/IllegalArgumentValue.java" />
+        <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java" />
         <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithCreditCardTest.java" />
         <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithDeitCardTest.java" />
+        <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework3_1/Card.java" />
+        <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/DebitCard.java" />
+        <option value="$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Main.java" />
+        <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardConstructorsTest.java" />
+        <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/CreditCardTest.java" />
+        <option value="$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java" />
       </list>
     </option>
   </component>
@@ -203,9 +223,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,13 +282,20 @@
               <item name="Homework4_1" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="sgalaktionov" type="462c0819:PsiDirectoryNode" />
+              <item name="testhomework3_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Homework4_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Homework4_1" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="sgalaktionov" type="462c0819:PsiDirectoryNode" />
               <item name="testhomework4_1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AtmWithDeitCardTest">
+  <component name="RunManager" selected="JUnit.All in Homework4_1">
     <configuration name="All in Homework4_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Homework4_1" />
@@ -457,8 +484,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AtmWithDeitCardTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Homework4_1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Homework4_1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AtmWithDeitCardTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.AtmWithCreditCardTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.CardTestICardImplementatoinMethods" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.DebitCardTest" />
@@ -487,28 +514,28 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 13h 59m 52s.xml">
+    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 18h 40m 30s.xml">
       <configuration name="All in Homework4_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 14h 09m 32s.xml">
+    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 18h 41m 27s.xml">
       <configuration name="All in Homework4_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 14h 10m 01s.xml">
+    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 18h 41m 53s.xml">
       <configuration name="All in Homework4_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 14h 10m 35s.xml">
+    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 18h 47m 18s.xml">
       <configuration name="All in Homework4_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 14h 21m 45s.xml">
+    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 18h 48m 56s.xml">
       <configuration name="All in Homework4_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 18h 07m 21s.xml">
+    <history-entry file="All_in_Homework4_1 - 2017.10.01 at 18h 49m 31s.xml">
       <configuration name="All in Homework4_1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AtmWithDeitCardTest - 2017.10.01 at 18h 09m 34s.xml">
-      <configuration name="AtmWithDeitCardTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AtmWithDeitCardTest - 2017.10.01 at 18h 10m 14s.xml">
+      <configuration name="AtmWithDeitCardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AtmWithDeitCardTest - 2017.10.01 at 18h 35m 11s.xml">
       <configuration name="AtmWithDeitCardTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CardTestICardImplementatoinMethods - 2017.10.01 at 13h 56m 57s.xml">
@@ -520,7 +547,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="860" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -530,7 +556,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.505" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32756326" sideWeight="0.495" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756326" sideWeight="0.495" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -572,6 +598,50 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/DebitCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Exceptions/IllegalArgumentValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework3_1/ICard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -608,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
           <caret line="337" column="25" lean-forward="false" selection-start-line="337" selection-start-column="25" selection-end-line="337" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,6 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="35" column="55" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -658,14 +728,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/testhomework3_1/homework3_1/Card.java" />
-    <entry file="file://$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/DebitCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/DebitCard.java" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -675,45 +738,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/homework3_1/CardTestICardImplementatoinMethods.java" />
     <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/homework3_1/CardConstructorsTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/CreditCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/CreditCard.java" />
     <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/testhomework4_1/DebitCardTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/Atm.java" />
     <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/testhomework4_1/CreditCardTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/AtmUI.java" />
+    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/homework4_1/AtmTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Exceptions/IllegalArgumentValue1.java" />
+    <entry file="file://$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/Exceptions/IllegalArgumentValue.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework3_1/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/CreditCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardConstructorsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardTestICardImplementatoinMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="-1348">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -726,73 +762,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/AtmUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Exceptions/IllegalArgumentValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/homework4_1/AtmTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/CreditCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/CreditCardTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Exceptions/IllegalArgumentValue1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com.sgalaktionov.homework4_1/Exceptions/IllegalArgumentValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/DebitCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Exceptions/IllegalArgumentValue.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardConstructorsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java">
+    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework3_1/CardTestICardImplementatoinMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="-3133">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -801,20 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithCreditCardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sgalaktionov/homework4_1/Atm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="-192">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -823,12 +838,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/AtmWithDeitCardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="-243">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/CreditCardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sgalaktionov/testhomework4_1/DebitCardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-668">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
