@@ -1,4 +1,4 @@
-package com.homework4_1;
+package com.sgalaktionov;
 
 public class Main {
 
