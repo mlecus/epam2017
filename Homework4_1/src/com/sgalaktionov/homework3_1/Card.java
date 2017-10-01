@@ -45,7 +45,7 @@ public class Card implements ICard {
         }
     }
 
-    protected void checkAmontForCorrectValue(double amount) throws IllegalArgumentException {
+    protected void checkAmountForCorrectValue(double amount) throws IllegalArgumentException {
         if (Double.isInfinite(amount)) {
             throw new IllegalArgumentException("Infinite value in Amount received");
         }
@@ -88,13 +88,13 @@ public class Card implements ICard {
 
     @Override
     public void increaseBalance(double amount) throws IllegalArgumentException {
-        checkAmontForCorrectValue(amount);
+        checkAmountForCorrectValue(amount);
         this.balance += amount;
     }
 
     @Override
     public void decreaseBalance(double amount) throws IllegalArgumentException, IllegalArgumentValue {
-        checkAmontForCorrectValue(amount);
+        checkAmountForCorrectValue(amount);
         this.balance -= amount;
     }
 

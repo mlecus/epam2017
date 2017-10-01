@@ -17,8 +17,8 @@ public class DebitCard extends Card implements ICard {
     }
 
     @Override
-    protected void checkAmontForCorrectValue(double amount) throws IllegalArgumentException {
-        super.checkAmontForCorrectValue(amount);
+    protected void checkAmountForCorrectValue(double amount) throws IllegalArgumentException {
+        super.checkAmountForCorrectValue(amount);
         if (amount > this.getBalance()) {
             throw new IllegalArgumentValue("amount for balance decreace is more than balance");
         }
