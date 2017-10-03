@@ -13,7 +13,7 @@ public class Folder {
 
     public Folder(String folderName, Folder parent) {
         this.folderName = folderName;
-        if (parent != null){
+        if (!(parent == null)){
             this.fullPath = parent.getFullPath() + parent.getName();
         }else{
             this.fullPath = "";
