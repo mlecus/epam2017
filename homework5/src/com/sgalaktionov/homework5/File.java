@@ -1,31 +1,37 @@
 package com.sgalaktionov.homework5;
 
 public class File {
-//    private String name;
-//    private String extension;
+
     private String fullName;
-//    private Folder parentFolder;
+    Folder parentFolder;
+
 
     public File(String fullName) {
+
         this.fullName = fullName;
     }
 
-/*    public String getFullName() {
-        return fullName;
+
+    public void setParentFolder(Folder parentFolder) {
+
+        this.parentFolder = parentFolder;
     }
 
-    public String getExtension() {
-        return extension;
+
+    public Folder getParentFolder() {
+
+        return this.parentFolder;
     }
-*/
+
+
     public String getFullName() {
-        return fullName;
+
+        return this.fullName;
     }
 
     @Override
     public String toString() {
 
-        //return super.toString();
-        return fullName;
+        return this.fullName;
     }
 }
