@@ -1,7 +1,6 @@
 package com.sgalaktionov.homework5;
 
-import com.sgalaktionov.homework5.Exceptions.FSFileAllreadyExistException;
-import com.sgalaktionov.homework5.Exceptions.FSInvalidSymbolExtension;
+import com.sgalaktionov.homework5.Exceptions.FSInvalidSymbolException;
 
 
 public class FileSystem {
@@ -43,12 +42,12 @@ public class FileSystem {
 
         //check for empty extension
         if (instanceName.charAt(length - 1) == FileSystem.EXTENSION_DIVIDER) {
-            throw new FSInvalidSymbolExtension("empty extension in \"" + instanceName + "\" command at " + (length - 1) + " position");
+            throw new FSInvalidSymbolException("empty extension in \"" + instanceName + "\" command at " + (length - 1) + " position");
         }
 
         //check for empty their farest child folder name
         if (instanceName.charAt(length - 1) == FileSystem.FOLDER_DIVIDER) {
-            throw new FSInvalidSymbolExtension("empty targe folder name in \"" + instanceName + "\" command at " + (length - 1) + " position");
+            throw new FSInvalidSymbolException("empty targe folder name in \"" + instanceName + "\" command at " + (length - 1) + " position");
         }
 
         //check for special symbols in extension
@@ -58,7 +57,7 @@ public class FileSystem {
             String extension = instanceName.substring(extensionDividerPosition + 1);
             for (char ch : FileSystem.SPECIAL_SYMBOLS.toCharArray()) {
                 if (extension.indexOf(ch) != -1) {
-                    throw new FSInvalidSymbolExtension("special symbol in extension " + ch + " in \" " + instanceName + "\" command at "
+                    throw new FSInvalidSymbolException("special symbol in extension " + ch + " in \" " + instanceName + "\" command at "
                             + (extensionDividerPosition + extension.indexOf(ch)) + " position");
                 }
             }
@@ -66,12 +65,18 @@ public class FileSystem {
 
         //check for empty file name
         if (instanceName.contains("/.")) {
-            throw new FSInvalidSymbolExtension("empty file name in \"" + instanceName + "\" command at " + instanceName.indexOf("/.") + " position");
+            throw new FSInvalidSymbolException("empty file name in \"" + instanceName + "\" command at " + instanceName.indexOf("/.") + " position");
+        }
+        if (instanceName.indexOf(".")==0){
+            throw new FSInvalidSymbolException("empty file name in \"" + instanceName + "\" command at " + instanceName.indexOf(".") + " position");
         }
 
         //check for empty a subfolder folder name
         if (instanceName.contains("//")) {
-            throw new FSInvalidSymbolExtension("empty subfolder name in \"" + instanceName + "\" command at " + instanceName.indexOf("//") + " position");
+            throw new FSInvalidSymbolException("empty subfolder name in \"" + instanceName + "\" command at " + instanceName.indexOf("//") + " position");
+        }
+        if (instanceName.indexOf("/")==0) {
+            throw new FSInvalidSymbolException("empty subfolder name in \"" + instanceName + "\" command at " + instanceName.indexOf("//") + " position");
         }
 
         //return instanceName;

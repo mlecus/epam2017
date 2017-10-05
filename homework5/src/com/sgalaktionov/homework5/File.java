@@ -5,12 +5,10 @@ public class File {
     private String fullName;
     Folder parentFolder;
 
-
     public File(String fullName) {
 
         this.fullName = fullName;
     }
-
 
     public void setParentFolder(Folder parentFolder) {
 

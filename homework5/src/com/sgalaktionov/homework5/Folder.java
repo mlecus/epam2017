@@ -116,63 +116,29 @@ public class Folder {
     @Override
     public String toString() {
 
-  /*      StringBuilder sb = new StringBuilder();
-        StringBuilder space = new StringBuilder();
-
-        //if (!(this.fullPath == null)) {
-
-        //space.append("|");
-        for (int i = 0; i < this.fullPath.length()-1; i++) {
-            if (this.fullPath.charAt(i) == '/') {
-                //space.append("|   ");
-                space.append("|");
-            } else {
-                space.append(" ");
-            }
-        }
-        //}else{
-        //  space.append("|   ");
-        //}
-        sb.append(space).append(this.getName()).append("\n");
-        //space.append("|   ");
-
-*/
         StringBuilder sb = new StringBuilder();
         StringBuilder space = new StringBuilder();
         sb.append(this.getName());
-        //sb.append("|   ").append(this.getName()).append("\n");
-        //space.append("|");
-        for (int i=0; i< this.getFullPath().length();i++) {
-            if (this.getFullPath().charAt(i) == FileSystem.FOLDER_DIVIDER){
-                //space.append("|");
+
+        for (int i = 0; i < this.getFullPath().length(); i++) {
+            if (this.getFullPath().charAt(i) == FileSystem.FOLDER_DIVIDER) {
                 space.append("    |");
-            }else {
-                //space.append(" ");
             }
         }
-        /*for (int i=0; i< this.getName().length()-1;i++) {
-            space.append(" ");
-        }*/
+
         space.append("    ");
 
         for (String key : this.folderHashMap.keySet()) {
             if (key.contentEquals(FileSystem.PARENT_FOLDER_SPECIFIER)) {
-                sb.append(space).append(FileSystem.PARENT_FOLDER_SPECIFIER).append("\n");
+               // sb.append("\n|").append(space).append(FileSystem.PARENT_FOLDER_SPECIFIER);
             } else {
                 sb.append("\n|").append(space).append(this.getSubFolder(key));
             }
         }
-        for (File file : this.fileHashMap.values()) {
 
+        for (File file : this.fileHashMap.values()) {
             sb.append("\n|").append(space).append(file);
         }
-        //XXX
-        //sb.deleteCharAt(sb.length() - 1);//.append("|");
-
         return sb.toString();
-
-
     }
-
-
 }

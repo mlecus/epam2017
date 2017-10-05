@@ -1,7 +1,7 @@
 package com.sgalaktionov.homework5;
 
 import com.sgalaktionov.homework5.Exceptions.FSFileAllreadyExistException;
-import com.sgalaktionov.homework5.Exceptions.FSInvalidSymbolExtension;
+import com.sgalaktionov.homework5.Exceptions.FSInvalidSymbolException;
 
 public class CommandLineApp {
     final private String helpMessage = "type \"help\" or \"?\" to help\n"
@@ -28,7 +28,7 @@ public class CommandLineApp {
                     fs.fileSystemAddInstance(userInput);
                 } catch (FSFileAllreadyExistException e) {
                     ui.printMessage(e.getMessage());
-                } catch (FSInvalidSymbolExtension e) {
+                } catch (FSInvalidSymbolException e) {
                     ui.printMessage(e.getMessage());
                 }
             }
