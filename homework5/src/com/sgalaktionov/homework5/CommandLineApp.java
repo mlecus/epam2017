@@ -1,9 +1,10 @@
 package com.sgalaktionov.homework5;
 
-import com.sgalaktionov.homework5.Exceptions.FSFileAllreadyExistException;
+import com.sgalaktionov.homework5.Exceptions.FSFileAlreadyExistException;
 import com.sgalaktionov.homework5.Exceptions.FSInvalidSymbolException;
 
 public class CommandLineApp {
+
     final private String helpMessage = "type \"help\" or \"?\" to help\n"
             + "type \"print\" to print file structure\n"
             + "type \"exit\" to exit\n";
@@ -22,11 +23,11 @@ public class CommandLineApp {
             } else if (userInput.compareToIgnoreCase("exit") == 0) {
                 return;
             } else if (userInput.compareToIgnoreCase("print") == 0) {
-                ui.printMessage(fs.toString());
+                ui.printMessage(fs.print());
             } else {
                 try {
                     fs.fileSystemAddInstance(userInput);
-                } catch (FSFileAllreadyExistException e) {
+                } catch (FSFileAlreadyExistException e) {
                     ui.printMessage(e.getMessage());
                 } catch (FSInvalidSymbolException e) {
                     ui.printMessage(e.getMessage());

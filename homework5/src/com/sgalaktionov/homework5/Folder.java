@@ -1,6 +1,6 @@
 package com.sgalaktionov.homework5;
 
-import com.sgalaktionov.homework5.Exceptions.FSFileAllreadyExistException;
+import com.sgalaktionov.homework5.Exceptions.FSFileAlreadyExistException;
 
 import java.util.HashMap;
 
@@ -65,7 +65,7 @@ public class Folder {
             throw new IllegalArgumentException(nullFileMessage + " for add to folder");
         }
         if (this.containsFile(file)) {
-            throw new FSFileAllreadyExistException("file " + file.getFullName() + " allready exist in " + this.fullPath + " folder");
+            throw new FSFileAlreadyExistException("file " + file.getFullName() + " allready exist in " + this.fullPath + " folder");
         }
         file.setParentFolder(this);
         this.fileHashMap.put(file.getFullName(), file);
@@ -99,13 +99,13 @@ public class Folder {
         /*if (this.folderHashMap.containsKey(folder.getName())) {
             String message = "file " + folder.getName()
                     + " already exist in " + this.fullPath + " folder";
-            throw new FSFileAllreadyExistException(message);
+            throw new FSFileAlreadyExistException(message);
         }*/
         if (folder == null) {
             throw new IllegalArgumentException(nullFolderMessage + "for add to folder");
         }
         if (this.containsFolder(folder)) {
-            throw new FSFileAllreadyExistException("folder " + folder.getName() + " allready exist in " + this.fullPath + " folder");
+            throw new FSFileAlreadyExistException("folder " + folder.getName() + " allready exist in " + this.fullPath + " folder");
         }
         folder.setParentFolder(this);
         //folder.fullPath = this.fullPath + this.folderName;

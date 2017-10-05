@@ -32,25 +32,30 @@ public class FileSystem {
         //this.root.folderHashMap = new HashMap<String, Folder>();
     }
 
-    public void validateInstanceName(String instanceName) {
+    private void checkForNullOrEmptyInstanceName(String instanceName) {
 
         if ((instanceName == null) || (instanceName.equals(""))) {
             throw new IllegalArgumentException("nothig to do");
         }
+    }
+
+    private void checkForEmptyExtension(String instanceName) {
+
         int length = instanceName.length();
-
-
-        //check for empty extension
         if (instanceName.charAt(length - 1) == FileSystem.EXTENSION_DIVIDER) {
             throw new FSInvalidSymbolException("empty extension in \"" + instanceName + "\" command at " + (length - 1) + " position");
         }
+    }
 
-        //check for empty their farest child folder name
+    private void checkForEmptyTargetFolder(String instanceName) {
+
+        int length = instanceName.length();
         if (instanceName.charAt(length - 1) == FileSystem.FOLDER_DIVIDER) {
             throw new FSInvalidSymbolException("empty targe folder name in \"" + instanceName + "\" command at " + (length - 1) + " position");
         }
+    }
 
-        //check for special symbols in extension
+    private void checkForSpecialSymbolsInExtension(String instanceName) {
         int extensionDividerPosition = instanceName.indexOf(FileSystem.EXTENSION_DIVIDER);
 
         if (extensionDividerPosition != -1) {
@@ -62,31 +67,48 @@ public class FileSystem {
                 }
             }
         }
+    }
 
-        //check for empty file name
+    private void checkForEmptyFileName(String instanceName) {
         if (instanceName.contains("/.")) {
             throw new FSInvalidSymbolException("empty file name in \"" + instanceName + "\" command at " + instanceName.indexOf("/.") + " position");
         }
-        if (instanceName.indexOf(".")==0){
+    }
+
+    private void checkForEmptyRootFileName(String instanceName) {
+        if (instanceName.indexOf(".") == 0) {
             throw new FSInvalidSymbolException("empty file name in \"" + instanceName + "\" command at " + instanceName.indexOf(".") + " position");
         }
+    }
 
-        //check for empty a subfolder folder name
+    private void checkForEmptySubFolderName(String instanceName) {
         if (instanceName.contains("//")) {
             throw new FSInvalidSymbolException("empty subfolder name in \"" + instanceName + "\" command at " + instanceName.indexOf("//") + " position");
         }
-        if (instanceName.indexOf("/")==0) {
+    }
+
+    private void checkForEmptyRootSubFolderName(String instanceName) {
+        if (instanceName.indexOf("/") == 0) {
             throw new FSInvalidSymbolException("empty subfolder name in \"" + instanceName + "\" command at " + instanceName.indexOf("//") + " position");
         }
+    }
 
-        //return instanceName;
+    public void validateInstanceName(String instanceName) {
+
+        checkForNullOrEmptyInstanceName(instanceName);
+        checkForEmptyExtension(instanceName);
+        checkForEmptyTargetFolder(instanceName);
+        checkForSpecialSymbolsInExtension(instanceName);
+        checkForEmptyFileName(instanceName);
+        checkForEmptyRootFileName(instanceName);
+        checkForEmptySubFolderName(instanceName);
+        checkForEmptyRootSubFolderName(instanceName);
     }
 
     public void fileSystemAddInstance(String instance) {
         String name;
         String path;
         Folder currentFolder = root;
-        String currentFolderName = "";
 
         validateInstanceName(instance);
 
@@ -104,7 +126,7 @@ public class FileSystem {
             String subFolderName = path.substring(0, path.indexOf(FOLDER_DIVIDER) + 1);
             path = path.substring(path.indexOf(FOLDER_DIVIDER) + 1);
             Folder subFolder = currentFolder.getSubFolder(subFolderName);
-            if (subFolder == null){
+            if (subFolder == null) {
                 subFolder = new Folder(subFolderName);
                 currentFolder.addFolder(subFolder);
             }
@@ -113,37 +135,15 @@ public class FileSystem {
         }
 
         //if (name.contains(EXTENSION_DIVIDER)) {
-        if (name.indexOf(EXTENSION_DIVIDER) != -1)
-        {
+        if (name.indexOf(EXTENSION_DIVIDER) != -1) {
             currentFolder.addFile(new File(name));
         } else {
             name += "/";
             currentFolder.addFolder(new Folder(name));
-            /*if (!currentFolder.folderHashMap.containsKey(name)) {
-                currentFolder.folderHashMap.put(name, new Folder(name, currentFolder));
-            } else {
-                //System.out.println("folder " + name + " already exist in folder " + currentFolder.getFullPath());
-                throw new FSFileAllreadyExistException("file " + name + " already exist in folder " + currentFolder.getFullPath());
-            }*/
-
         }
-
     }
 
-    @Override
-    public String toString() {
-
-        //return super.toString();
-
-        /*StringBuilder sb = new StringBuilder();
-        //sb.append(this.root.getName()).append("\n");
-        for (Folder folder: this.root.folderHashMap.values()) {
-            sb.append(folder).append("\n");
-        }
-        for (File file: this.root.fileHashMap.values()) {
-            sb.append(file).append("\n");
-        }
-        return sb.toString();*/
+    public String print() {
         return this.root.toString();
     }
 }
