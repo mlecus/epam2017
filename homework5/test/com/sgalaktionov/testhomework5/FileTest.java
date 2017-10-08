@@ -13,6 +13,7 @@ public class FileTest {
 
     public File file;
     public  Folder root;
+
     @Before
     public  void testSetUp(){
         root = new Folder(rootName);
@@ -24,12 +25,14 @@ public class FileTest {
         assertEquals("file.ext", file.getFullName());
     }
 
-    @Test void testGetParentFolderBefoAddToFolder(){
+    @Test
+    public void testGetParentFolderBefoAddToFolder(){
 
         assertEquals(null, file.getParentFolder());
     }
 
-    @Test void testGetParentFolderAfterAddToFolder(){
+    @Test
+    public void testGetParentFolderAfterAddToFolder(){
 
         root.addFile(file);
         assertEquals(root, file.getParentFolder());
