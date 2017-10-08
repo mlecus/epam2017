@@ -1,55 +1,47 @@
 package com.sgalaktionov.homework6;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class TextProcessor {
-    String punctuationSymbols =":.,!?\"\'\t";
+
+    private  String punctuationSymbolsRegExp = "\\W";
+    private Pattern punctuationPattern;
+
+    private String punctuationInsideWordRegExp = "\\w*\\W+\\w+";
+
     public TextProcessor() {
+
+        punctuationPattern = Pattern.compile(punctuationSymbolsRegExp);
     }
 
     public String removePunctuation(String input) {
 
-        String result = input;
         if ("".equals(input)) {
             return "";
         }
 
-        char lastUncheckedSymbol;
-        int lastUncheckedSymbolIndex;
-        for (lastUncheckedSymbolIndex = result.length() - 1; lastUncheckedSymbolIndex >= 0; lastUncheckedSymbolIndex--) {
-            lastUncheckedSymbol = input.charAt(lastUncheckedSymbolIndex);
-            if (punctuationSymbols.indexOf(lastUncheckedSymbol) == -1) {
-                break;
-            }
-        }
-        if (lastUncheckedSymbolIndex < 0){
-            return "";
-        }else{
-            result = result.substring(0, lastUncheckedSymbolIndex+1);
+        if (input.matches(punctuationInsideWordRegExp)) {
+            throw new IllegalArgumentException(input);
         }
 
-        for (int i = 0; i < result.length(); i++) {
-            char currentSymbol = result.charAt(i);
-            if (punctuationSymbols.indexOf(currentSymbol) != -1) {
-                String message = "unexpected punctuation mark " + currentSymbol + " in word \""+result +"\"";
-                throw new IllegalArgumentException(message);
-            }
-        }
+        Matcher punctuationRemover = punctuationPattern.matcher(input);
+        String result = punctuationRemover.replaceAll("");
         return result;
     }
 
-    public WordContainer process(String text){
+    public WordContainer process(String text) {
 
-        StringParser stringParser = new StringParser(text, punctuationSymbols);
+        StringParser stringParser = new StringParser(text/*, punctuationSymbolsRegExp*/);
         WordContainer wordContainer = new WordContainer();
-        while (stringParser.isNextPresent()){
+        while (stringParser.hasNext()) {
             try {
-                String word = stringParser.getNextWord();
-
+                String word = stringParser.getNext();
                 word = removePunctuation(word);
-
                 if (!"".equals(word)) {
                     wordContainer.add(word);
                 }
-            }catch (IllegalArgumentException e){
+            } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
         }

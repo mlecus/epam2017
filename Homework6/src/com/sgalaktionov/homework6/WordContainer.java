@@ -4,7 +4,7 @@ import java.util.*;
 
 public class WordContainer {
 
-    TreeMap<Character, TreeSet<String>> container;
+    private TreeMap<Character, TreeSet<String>> container;
 
     public WordContainer() {
 

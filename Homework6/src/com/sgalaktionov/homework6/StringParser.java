@@ -1,55 +1,39 @@
 package com.sgalaktionov.homework6;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class StringParser {
 
-    String string;
-    int currentPosition;
-    final String wasteSymbols;
+    private String string;
+    private int currentPosition;
+    private Matcher matcher;
 
     public StringParser(String string) {
 
         this.string = string;
         currentPosition = 0;
-        wasteSymbols = "";
+
+        String wordsSeparators ="\\s";
+        Pattern wordsSeparatorsPattern = Pattern.compile(wordsSeparators);
+        this.matcher = wordsSeparatorsPattern.matcher(string);
     }
 
-    public StringParser(String string, String punctuationSymbols) {
-
-        this.string = string;
-        currentPosition = 0;
-        this.wasteSymbols = punctuationSymbols;
-    }
-
-    public String getNextWord() {
+    public String getNext() {
 
         if (currentPosition >= string.length()) {
             throw new StringIndexOutOfBoundsException("no any words more");
         }
 
-        int nextSpasePosition = string.indexOf(" ", currentPosition);
-        int nextLFPosition = string.indexOf("\n", currentPosition);
-        int nextWordEndPosition = 0;
-        if (nextLFPosition == -1) {
-            nextWordEndPosition = nextSpasePosition;
-        } else {
-            if (nextSpasePosition != -1) {
-                nextWordEndPosition = Math.min(nextLFPosition, nextSpasePosition);
-            } else {
-                nextWordEndPosition = nextLFPosition;
-            }
-        }
-        if (nextWordEndPosition == -1) {
-            nextWordEndPosition = string.length();
-        }
-
+        int nextWordEndPosition = matcher.start();
         String out = string.substring(currentPosition, nextWordEndPosition);
         currentPosition = nextWordEndPosition + 1;
 
         return out;
     }
 
-    public boolean isNextPresent() {
+    public boolean hasNext() {
 
-        return (currentPosition < string.length() - 1);
+        return matcher.find();
     }
 }

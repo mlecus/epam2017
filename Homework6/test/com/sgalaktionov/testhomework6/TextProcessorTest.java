@@ -86,4 +86,10 @@ public class TextProcessorTest {
 
         textProcessor.removePunctuation("wo.rd");
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testRemoveMultiplePunctuationWithPunctuationInsideWord() {
+
+        textProcessor.removePunctuation("wo^!.rd");
+    }
 }
