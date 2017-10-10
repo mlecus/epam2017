@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WorkerTeamDB {
-    private List <WorkerTeam> db;
+    private List <WorkerTeam> teams;
 
     public WorkerTeamDB() {
-        this.db = new ArrayList<>();
+        this.teams = new ArrayList<>();
     }
 
     public WorkerTeamDB add(WorkerTeam team){
-        db.add(team);
+        teams.add(team);
         return this;
     }
 
-    public List <WorkerTeam> get(){
-        return db;
+    public List <WorkerTeam> getTeams(){
+        return teams;
     }
 }

@@ -7,27 +7,28 @@ import org.junit.Test;
 public class TeamSearcherTest {
     @Test
     public void testSearch() throws Exception {
-        Contract contract = new Contract(125000);
-        contract.addSkill(Skills.DRIVER, 5);
-        contract.addSkill(Skills.PAINTER, 7);
-        contract.addSkill(Skills.BUILDER, 10);
-        contract.addSkill(Skills.MOUNTER, 12);
+        Contract contract = new Contract();
+        contract.addSkill(Skills.DRIVER, 1);
+        contract.addSkill(Skills.PAINTER, 1);
+        contract.addSkill(Skills.BUILDER, 1);
+        //contract.addSkill(Skills.MOUNTER, 1);
 
 
-        WorkerTeam workerTeam1 = new WorkerTeam(1, 12000);
+        WorkerTeam workerTeam1 = new WorkerTeam(1, 9000);
         workerTeam1.addWorker(new Worker().addSkill(Skills.DRIVER).addSkill(Skills.PAINTER))
                 .addWorker(new Worker().addSkill(Skills.BUILDER))
                 .addWorker(new Worker().addSkill(Skills.BUILDER))
                 .addWorker(new Worker().addSkill(Skills.PAINTER));
 
-        WorkerTeam workerTeam2 = new WorkerTeam(2, 12000);
-        workerTeam1.addWorker(new Worker().addSkill(Skills.DRIVER).addSkill(Skills.PAINTER))
+        WorkerTeam workerTeam2 = new WorkerTeam(2, 10000);
+        workerTeam2.addWorker(new Worker().addSkill(Skills.DRIVER).addSkill(Skills.PAINTER))
                 .addWorker(new Worker().addSkill(Skills.BUILDER))
                 .addWorker(new Worker().addSkill(Skills.BUILDER))
+                .addWorker(new Worker().addSkill(Skills.MOUNTER))
                 .addWorker(new Worker().addSkill(Skills.PAINTER));
 
         WorkerTeam workerTeam3 = new WorkerTeam(3, 12000);
-        workerTeam1.addWorker(new Worker().addSkill(Skills.DRIVER).addSkill(Skills.PAINTER))
+        workerTeam3.addWorker(new Worker().addSkill(Skills.DRIVER).addSkill(Skills.PAINTER))
                 .addWorker(new Worker().addSkill(Skills.BUILDER))
                 .addWorker(new Worker().addSkill(Skills.BUILDER).addSkill(Skills.MOUNTER))
                 .addWorker(new Worker().addSkill(Skills.PAINTER));
@@ -39,6 +40,7 @@ public class TeamSearcherTest {
                 .add(workerTeam3);
 
         WorkerTeam winnerTeam = new TeamSearcher(db).search(contract);
+        System.out.println(winnerTeam);
     }
 
 }

@@ -27,5 +27,21 @@ public class WorkerTeam {
         }
         return this;
     }
+
+    public HashMap<Skills, Integer> getSkills() {
+        return skills;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder();
+        out.append("TeamID ").append(id);
+        return out.toString();
+    }
+
 }
 
