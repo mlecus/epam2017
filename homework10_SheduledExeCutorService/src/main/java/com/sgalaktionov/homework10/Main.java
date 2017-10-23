@@ -18,12 +18,6 @@ public class Main {
     public static int MAXIMAL_INCREASING_ATM_AMOUNT = 10;
 
 
-    private static void cancelAllTask(ArrayList<ScheduledFuture> taskHandlerList, String description) {
-        for (ScheduledFuture taskHandler : taskHandlerList) {
-            System.out.println(description + taskHandlerList.indexOf(taskHandler));
-            taskHandler.cancel(true);
-        }
-    }
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -36,20 +30,23 @@ public class Main {
         for (int i = 0; i < MINIMAL_DECREASING_ATM_AMOUNT
                 + Math.random() * (MAXIMAL_DECREASING_ATM_AMOUNT - MINIMAL_DECREASING_ATM_AMOUNT); i++) {
             System.out.println("create decreasing atm #" + i);
-            int finalI = i + 1;
-            Runnable decreasingAtm = new DecreasingAtmThread(debitCard);
+            Runnable decreasingAtm = new DecreasingAtmThread(debitCard,
+                    decreasingAtmHandlerList,
+                    increasingAtmHandlerList,
+                    executorService,
+                    i+1);
             ScheduledFuture<?> decreasingAtmHandler = executorService.scheduleAtFixedRate(decreasingAtm, 200, (3 + (int) Math.random() * 2) * 40, TimeUnit.MILLISECONDS);
             decreasingAtmHandlerList.add(decreasingAtmHandler);
         }
 
-        for (int i = 0; i < MINIMAL_INCREASING_ATM_AMOUNT
-                + Math.random() * (MAXIMAL_INCREASING_ATM_AMOUNT - MINIMAL_INCREASING_ATM_AMOUNT); i++) {
-            System.out.println("create increasing atm #" + i);
-            int finalI = i;
-            Runnable increasingAtm = new DecreasingAtmThread();
-            ScheduledFuture<?> increasingAtmHandler = executorService.scheduleAtFixedRate(increasingAtm, 200, (3 + (int) Math.random() * 2) * 40, TimeUnit.MILLISECONDS);
-            increasingAtmHandlerList.add(increasingAtmHandler);
-        }
+//        for (int i = 0; i < MINIMAL_INCREASING_ATM_AMOUNT
+//                + Math.random() * (MAXIMAL_INCREASING_ATM_AMOUNT - MINIMAL_INCREASING_ATM_AMOUNT); i++) {
+//            System.out.println("create increasing atm #" + i);
+//            int finalI = i;
+//            Runnable increasingAtm = new DecreasingAtmThread();
+//            ScheduledFuture<?> increasingAtmHandler = executorService.scheduleAtFixedRate(increasingAtm, 200, (3 + (int) Math.random() * 2) * 40, TimeUnit.MILLISECONDS);
+//            increasingAtmHandlerList.add(increasingAtmHandler);
+//        }
 
         while (true) {
             boolean allDead = true;
