@@ -67,29 +67,7 @@ public class Main {
                 + Math.random() * (MAXIMAL_INCREASING_ATM_AMOUNT - MINIMAL_INCREASING_ATM_AMOUNT); i++) {
             System.out.println("create increasing atm #" + i);
             int finalI = i;
-            Runnable increasingAtm = new Runnable() {
-                private int id = finalI;
-
-                @Override
-                public void run() {
-                    Atm atm = new Atm();
-                    double balance = 0;
-
-                    double amount = 5 * Math.random();
-                    synchronized (debitCard) {
-                        balance = debitCard.getBalance();
-                        System.out.println("#" + id + ": " + (amount) + "\t" + balance);
-                        if (balance + amount < FINAL_FULL_BALANCE) {
-                            atm.increaseBalance(debitCard, amount);
-                        } else {
-                            System.out.println("#" + id + ": card is full " + balance);
-                            cancelAllTask(decreasingAtmHandlerList, "cancel decreasing #");
-                            cancelAllTask(increasingAtmHandlerList, "cancel increasing #");
-                            executorService.shutdown();
-                        }
-                    }
-                }
-            };
+            Runnable increasingAtm = new DecreasingAtmThread();
             ScheduledFuture<?> increasingAtmHandler = executorService.scheduleAtFixedRate(increasingAtm, 200, (3 + (int) Math.random() * 2) * 40, TimeUnit.MILLISECONDS);
             increasingAtmHandlerList.add(increasingAtmHandler);
         }
